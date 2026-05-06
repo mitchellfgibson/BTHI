@@ -15,7 +15,7 @@ description: "Community-led co-investment. Experienced leads. Same terms for eve
   <div class="home-section" id="deals">
     <div class="home-section-header">
       <h2>Open deals this week</h2>
-      <a href="/deal/" class="home-section-link">View all open deals &rarr;</a>
+      <a href="/#deals" class="home-section-link">View all open deals &rarr;</a>
     </div>
 
     <div class="deal-grid">

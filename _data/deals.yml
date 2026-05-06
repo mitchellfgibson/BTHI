@@ -34,7 +34,7 @@
   lead_role: "Former CEO, Equator Coffees"
   lead_amount: "$150,000"
   platform_committed: "$25,000"
-  link: "#"
+  link: "/deals/common-ground/"
 
 - id: lastmile
   name: "LastMile Broadband"
@@ -53,4 +53,4 @@
   lead_role: "Former VP Operations, Frontier Communications"
   lead_amount: "$200,000"
   platform_committed: "$50,000"
-  link: "#"
+  link: "/deals/lastmile/"
