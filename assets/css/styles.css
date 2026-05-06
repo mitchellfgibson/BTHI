@@ -1961,3 +1961,163 @@ body:has(.channel-pane:target) .channel-pane.default-active:not(:target) { displ
     gap: 1.5rem;
   }
 }
+
+/* ──────────────────────────────────
+   FOOTER MESSAGE BUTTON
+   ────────────────────────────────── */
+.footer-msg-btn {
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--ink);
+  padding: 3px 8px;
+  text-decoration: none;
+  border: 1px solid var(--ink);
+  transition: background 0.1s, color 0.1s;
+}
+.footer-msg-btn:hover {
+  background: var(--red);
+  border-color: var(--red);
+  color: var(--paper);
+}
+
+/* ──────────────────────────────────
+   TWITTER / X ACCOUNT CARDS
+   ────────────────────────────────── */
+.twitter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 1px solid var(--rule);
+  margin: 1.5rem 0 1rem;
+}
+
+.twitter-card {
+  padding: 1.25rem 1.5rem;
+  border-right: 1px solid var(--rule-lt);
+  border-bottom: 1px solid var(--rule-lt);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.twitter-card:nth-child(3n) { border-right: none; }
+.twitter-card:nth-child(4),
+.twitter-card:nth-child(5),
+.twitter-card:nth-child(6) { border-bottom: none; }
+
+.twitter-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0.75rem;
+}
+.twitter-handle {
+  font-family: var(--mono);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+.twitter-followers {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  opacity: 0.5;
+}
+
+/* Rating badge */
+.twitter-rating {
+  font-family: var(--mono);
+  font-size: 1.15rem;
+  font-weight: 700;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.twitter-rating--great { color: var(--green); border-color: var(--green); }
+.twitter-rating--good  { color: var(--ink);  border-color: var(--ink); opacity: 0.7; }
+.twitter-rating--mid   { color: #8B6914;     border-color: #8B6914; }
+.twitter-rating--bad   { color: var(--red);  border-color: var(--red); }
+
+.twitter-what {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  line-height: 1.6;
+  opacity: 0.7;
+  margin: 0;
+  max-width: none;
+}
+
+/* Score bars */
+.twitter-scores {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border-top: 1px solid var(--rule-lt);
+  padding-top: 0.65rem;
+}
+.twitter-score-row {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr 2.5rem;
+  gap: 0.5rem;
+  align-items: center;
+}
+.twitter-score-label {
+  font-family: var(--sans);
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.45;
+}
+.twitter-score-bar {
+  height: 3px;
+  background: rgba(10,10,10,0.1);
+}
+.twitter-score-fill {
+  height: 100%;
+  background: var(--green);
+}
+.twitter-score-fill--bad { background: var(--red); }
+.twitter-score-val {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-align: right;
+  opacity: 0.75;
+}
+
+.twitter-take {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  opacity: 0.75;
+  margin: 0;
+  max-width: none;
+  border-left: 3px solid var(--rule-lt);
+  padding-left: 0.65rem;
+}
+
+/* ── Twitter grid mobile ── */
+@media (max-width: 900px) {
+  .twitter-grid { grid-template-columns: repeat(2, 1fr); }
+  .twitter-card:nth-child(3n) { border-right: 1px solid var(--rule-lt); }
+  .twitter-card:nth-child(2n) { border-right: none; }
+  .twitter-card:nth-child(4),
+  .twitter-card:nth-child(5),
+  .twitter-card:nth-child(6) { border-bottom: 1px solid var(--rule-lt); }
+  .twitter-card:nth-child(5),
+  .twitter-card:nth-child(6) { border-bottom: none; }
+}
+@media (max-width: 600px) {
+  .twitter-grid { grid-template-columns: 1fr; }
+  .twitter-card { border-right: none !important; border-bottom: 1px solid var(--rule-lt) !important; }
+  .twitter-card:last-child { border-bottom: none !important; }
+}
