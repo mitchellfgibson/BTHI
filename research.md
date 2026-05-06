@@ -26,9 +26,211 @@ description: "A 36-platform market map of the retail alternatives landscape, pub
   </div>
 </div>
 
-<p>This map is published for members. It is not investment advice and does not constitute a recommendation of any platform. It is our attempt to understand the competitive landscape clearly, because our members deserve to know where we sit relative to every alternative.</p>
+<div class="bucket" id="commentariat">
+  <div class="bucket-header">
+    <span class="bucket-number">07</span>
+    <span class="bucket-title">The Commentariat: Top X/Twitter Investment Voices, Rated</span>
+  </div>
+  <p class="bucket-intro">We tracked twelve months of posts, cross-referenced explicit investment recommendations against available public outcome data, and scored each account on three dimensions: analytical rigor, conflict-of-interest transparency, and pick accuracy. Follower counts are Q1 2026. Pick data covers recommendations made publicly between Jan 2024 and Jan 2026. Accounts that don't make picks are scored N/A on accuracy.</p>
 
-<p>Six buckets. The taxonomy reflects how these businesses actually compete, not how they market themselves.</p>
+  {% include commentary.html
+    label="Methodology note"
+    text="This is editorial analysis, not financial advice. 'Pick accuracy' counts a recommendation as positive if the company raised a subsequent priced round at a flat or up valuation, achieved revenue growth of 20%+, or was acquired above the implied crowdfunding valuation. All other outcomes count as neutral or negative. Sample sizes are noted per account." %}
+
+  <div class="twitter-grid">
+
+    <div class="twitter-card">
+      <div class="twitter-card-top">
+        <div>
+          <div class="twitter-handle">@sec_filings_nerd</div>
+          <div class="twitter-followers"><span class="mono">67.2K</span> followers</div>
+        </div>
+        <div class="twitter-rating twitter-rating--great">4.8</div>
+      </div>
+      <p class="twitter-what">Posts annotated Form C filings, SEC enforcement actions, and no-action letters. No recommendations — just primary sources with plain-English margin notes. Covers FINRA funding portal updates nobody else reads.</p>
+      <div class="twitter-scores">
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Analytical rigor</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:100%"></div></div>
+          <span class="twitter-score-val mono">5.0</span>
+        </div>
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Transparency</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:100%"></div></div>
+          <span class="twitter-score-val mono">5.0</span>
+        </div>
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Pick accuracy</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:0%"></div></div>
+          <span class="twitter-score-val mono">N/A</span>
+        </div>
+      </div>
+      <p class="twitter-take">"Doesn't tell you what to invest in. Just shows you the documents and trusts you to read them. The smallest audience on this list. The highest signal. Follow this one first."</p>
+    </div>
+
+    <div class="twitter-card">
+      <div class="twitter-card-top">
+        <div>
+          <div class="twitter-handle">@the_skeptic_lp</div>
+          <div class="twitter-followers"><span class="mono">312K</span> followers</div>
+        </div>
+        <div class="twitter-rating twitter-rating--great">4.7</div>
+      </div>
+      <p class="twitter-what">Platform failures, real return data, and structural critiques of crowdfunding economics. Five years of posting. Zero explicit investment recommendations. Posts what the industry knows but won't say publicly.</p>
+      <div class="twitter-scores">
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Analytical rigor</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:96%"></div></div>
+          <span class="twitter-score-val mono">4.8</span>
+        </div>
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Transparency</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:100%"></div></div>
+          <span class="twitter-score-val mono">5.0</span>
+        </div>
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Pick accuracy</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:0%"></div></div>
+          <span class="twitter-score-val mono">N/A</span>
+        </div>
+      </div>
+      <p class="twitter-take">"Our second favorite account. Has documented the Yieldstreet, CrowdStreet, and Republic failures in real time, correctly and in advance. If you read one account to understand what can go wrong, it's this one."</p>
+    </div>
+
+    <div class="twitter-card">
+      <div class="twitter-card-top">
+        <div>
+          <div class="twitter-handle">@FounderBets</div>
+          <div class="twitter-followers"><span class="mono">284K</span> followers</div>
+        </div>
+        <div class="twitter-rating twitter-rating--good">4.0</div>
+      </div>
+      <p class="twitter-what">SAFE term analysis, cap table mechanics, and Reg CF diligence frameworks. Digs into Form C filings the way a securities lawyer would. Rarely makes explicit investment picks — focuses on structure, not stories.</p>
+      <div class="twitter-scores">
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Analytical rigor</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:88%"></div></div>
+          <span class="twitter-score-val mono">4.4</span>
+        </div>
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Transparency</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:80%"></div></div>
+          <span class="twitter-score-val mono">4.0</span>
+        </div>
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Pick accuracy</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:62%"></div></div>
+          <span class="twitter-score-val mono">3.1 <span style="opacity:0.45;font-size:0.6em;">n=47</span></span>
+        </div>
+      </div>
+      <p class="twitter-take">"The most technically accurate active-commentary account on this list. Good on mechanics, inconsistent on picks. The 47 tracked recommendations showed a 31% positive outcome rate — above base rate, below hype. Use for structure education, not stock tips."</p>
+    </div>
+
+    <div class="twitter-card">
+      <div class="twitter-card-top">
+        <div>
+          <div class="twitter-handle">@altinvestor_pro</div>
+          <div class="twitter-followers"><span class="mono">178K</span> followers</div>
+        </div>
+        <div class="twitter-rating twitter-rating--mid">2.5</div>
+      </div>
+      <p class="twitter-what">Private credit and real estate crowdfunding analysis. Publishes IRR models, waterfall scenarios, and platform comparisons. Disclosed affiliate relationships with three platforms: Yieldstreet, Fundrise, and Arrived.</p>
+      <div class="twitter-scores">
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Analytical rigor</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:62%"></div></div>
+          <span class="twitter-score-val mono">3.1</span>
+        </div>
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Transparency</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:36%"></div></div>
+          <span class="twitter-score-val mono">1.8</span>
+        </div>
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Pick accuracy</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:50%"></div></div>
+          <span class="twitter-score-val mono">2.5 <span style="opacity:0.45;font-size:0.6em;">n=89</span></span>
+        </div>
+      </div>
+      <p class="twitter-take">"Better than the crowdfunding cheerleaders. The problem: platform ratings correlate suspiciously well with affiliate payment size. Yieldstreet was rated 4.2/5 in 2022, the same year they were building toward a $1.9M SEC fine. The affiliate disclosures are there if you squint."</p>
+      <span class="platform-flag flag-warning">Undisclosed Affiliate Conflicts</span>
+    </div>
+
+    <div class="twitter-card">
+      <div class="twitter-card-top">
+        <div>
+          <div class="twitter-handle">@crowdcapital_dan</div>
+          <div class="twitter-followers"><span class="mono">1.4M</span> followers</div>
+        </div>
+        <div class="twitter-rating twitter-rating--bad">1.1</div>
+      </div>
+      <p class="twitter-what">"This startup could 100x your money 🚀" — posts every notable Reg CF raise as a potential transformational investment. Six affiliate links in bio. Paid sponsorships from four platforms, disclosed in most posts.</p>
+      <div class="twitter-scores">
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Analytical rigor</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill twitter-score-fill--bad" style="width:16%"></div></div>
+          <span class="twitter-score-val mono">0.8</span>
+        </div>
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Transparency</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill twitter-score-fill--bad" style="width:28%"></div></div>
+          <span class="twitter-score-val mono">1.4</span>
+        </div>
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Pick accuracy</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill twitter-score-fill--bad" style="width:22%"></div></div>
+          <span class="twitter-score-val mono">1.1 <span style="opacity:0.45;font-size:0.6em;">n=218</span></span>
+        </div>
+      </div>
+      <p class="twitter-take">"Largest audience. Worst advice. Of 218 tracked recommendations: 4% positive exit, 18% shuttered, 78% still private with no material updates after 12 months. The 1.4M followers are not a quality signal — they're a market size for sponsored content."</p>
+      <span class="platform-flag flag-warning">Paid Promotion · 4% Positive Exit Rate</span>
+    </div>
+
+    <div class="twitter-card">
+      <div class="twitter-card-top">
+        <div>
+          <div class="twitter-handle">@retail_vc_vibes</div>
+          <div class="twitter-followers"><span class="mono">892K</span> followers</div>
+        </div>
+        <div class="twitter-rating twitter-rating--bad">0.8</div>
+      </div>
+      <p class="twitter-what">"How to invest like a VC for $500" lifestyle content. Aspirational aesthetic, minimal substance. Sells a $497 crowdfunding course. Posts 4-6x per day. Zero citations, zero primary sources, zero disclosed methodology.</p>
+      <div class="twitter-scores">
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Analytical rigor</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill twitter-score-fill--bad" style="width:4%"></div></div>
+          <span class="twitter-score-val mono">0.2</span>
+        </div>
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Transparency</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill twitter-score-fill--bad" style="width:10%"></div></div>
+          <span class="twitter-score-val mono">0.5</span>
+        </div>
+        <div class="twitter-score-row">
+          <span class="twitter-score-label">Pick accuracy</span>
+          <div class="twitter-score-bar"><div class="twitter-score-fill twitter-score-fill--bad" style="width:14%"></div></div>
+          <span class="twitter-score-val mono">0.7 <span style="opacity:0.45;font-size:0.6em;">n=156</span></span>
+        </div>
+      </div>
+      <p class="twitter-take">"892K followers. $497 course. 2% positive exit rate on 156 tracked picks — the worst on this list. The math is not ambiguous. The audience growth is real; the investment advice is not."</p>
+      <span class="platform-flag flag-warning">Course Seller · 2% Exit Rate · Worst Tracked</span>
+    </div>
+
+  </div>
+
+  {% include commentary.html
+    label="What this bucket teaches us"
+    text="Follower count and advice quality are inversely correlated on this list. The two accounts with no picks and the smallest audiences scored highest. The account with 1.4M followers produced a 4% positive outcome rate across 218 tracked recommendations. If you must follow investment influencers: weight rigor and transparency, ignore reach." %}
+
+</div>
+
+<div class="research-secondary">
+
+<div class="research-secondary-header">
+  <span class="research-secondary-label">Full platform breakdown</span>
+  <p class="research-secondary-note">This map is published for members. It is not investment advice and does not constitute a recommendation of any platform. It is our attempt to understand the competitive landscape clearly, because our members deserve to know where we sit relative to every alternative.</p>
+  <p class="research-secondary-note">Six buckets. The taxonomy reflects how these businesses actually compete, not how they market themselves.</p>
+</div>
 
 <hr class="rule">
 
@@ -322,208 +524,6 @@ description: "A 36-platform market map of the retail alternatives landscape, pub
 
 <hr class="rule">
 
-<hr class="rule">
-
-<div class="bucket">
-  <div class="bucket-header">
-    <span class="bucket-number">07</span>
-    <span class="bucket-title">The Commentariat: Top X/Twitter Investment Voices, Rated</span>
-  </div>
-  <p class="bucket-intro">We tracked twelve months of posts, cross-referenced explicit investment recommendations against available public outcome data, and scored each account on three dimensions: analytical rigor, conflict-of-interest transparency, and pick accuracy. Follower counts are Q1 2026. Pick data covers recommendations made publicly between Jan 2024 and Jan 2026. Accounts that don't make picks are scored N/A on accuracy.</p>
-
-  {% include commentary.html
-    label="Methodology note"
-    text="This is editorial analysis, not financial advice. 'Pick accuracy' counts a recommendation as positive if the company raised a subsequent priced round at a flat or up valuation, achieved revenue growth of 20%+, or was acquired above the implied crowdfunding valuation. All other outcomes count as neutral or negative. Sample sizes are noted per account." %}
-
-  <div class="twitter-grid">
-
-    <div class="twitter-card">
-      <div class="twitter-card-top">
-        <div>
-          <div class="twitter-handle">@sec_filings_nerd</div>
-          <div class="twitter-followers"><span class="mono">67.2K</span> followers</div>
-        </div>
-        <div class="twitter-rating twitter-rating--great">4.8</div>
-      </div>
-      <p class="twitter-what">Posts annotated Form C filings, SEC enforcement actions, and no-action letters. No recommendations — just primary sources with plain-English margin notes. Covers FINRA funding portal updates nobody else reads.</p>
-      <div class="twitter-scores">
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Analytical rigor</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:100%"></div></div>
-          <span class="twitter-score-val mono">5.0</span>
-        </div>
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Transparency</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:100%"></div></div>
-          <span class="twitter-score-val mono">5.0</span>
-        </div>
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Pick accuracy</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:0%"></div></div>
-          <span class="twitter-score-val mono">N/A</span>
-        </div>
-      </div>
-      <p class="twitter-take">"Doesn't tell you what to invest in. Just shows you the documents and trusts you to read them. The smallest audience on this list. The highest signal. Follow this one first."</p>
-    </div>
-
-    <div class="twitter-card">
-      <div class="twitter-card-top">
-        <div>
-          <div class="twitter-handle">@the_skeptic_lp</div>
-          <div class="twitter-followers"><span class="mono">312K</span> followers</div>
-        </div>
-        <div class="twitter-rating twitter-rating--great">4.7</div>
-      </div>
-      <p class="twitter-what">Platform failures, real return data, and structural critiques of crowdfunding economics. Five years of posting. Zero explicit investment recommendations. Posts what the industry knows but won't say publicly.</p>
-      <div class="twitter-scores">
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Analytical rigor</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:96%"></div></div>
-          <span class="twitter-score-val mono">4.8</span>
-        </div>
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Transparency</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:100%"></div></div>
-          <span class="twitter-score-val mono">5.0</span>
-        </div>
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Pick accuracy</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:0%"></div></div>
-          <span class="twitter-score-val mono">N/A</span>
-        </div>
-      </div>
-      <p class="twitter-take">"Our second favorite account. Has documented the Yieldstreet, CrowdStreet, and Republic failures in real time, correctly and in advance. If you read one account to understand what can go wrong, it's this one."</p>
-    </div>
-
-    <div class="twitter-card">
-      <div class="twitter-card-top">
-        <div>
-          <div class="twitter-handle">@FounderBets</div>
-          <div class="twitter-followers"><span class="mono">284K</span> followers</div>
-        </div>
-        <div class="twitter-rating twitter-rating--good">4.0</div>
-      </div>
-      <p class="twitter-what">SAFE term analysis, cap table mechanics, and Reg CF diligence frameworks. Digs into Form C filings the way a securities lawyer would. Rarely makes explicit investment picks — focuses on structure, not stories.</p>
-      <div class="twitter-scores">
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Analytical rigor</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:88%"></div></div>
-          <span class="twitter-score-val mono">4.4</span>
-        </div>
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Transparency</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:80%"></div></div>
-          <span class="twitter-score-val mono">4.0</span>
-        </div>
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Pick accuracy</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:62%"></div></div>
-          <span class="twitter-score-val mono">3.1 <span style="opacity:0.45;font-size:0.6em;">n=47</span></span>
-        </div>
-      </div>
-      <p class="twitter-take">"The most technically accurate active-commentary account on this list. Good on mechanics, inconsistent on picks. The 47 tracked recommendations showed a 31% positive outcome rate — above base rate, below hype. Use for structure education, not stock tips."</p>
-    </div>
-
-    <div class="twitter-card">
-      <div class="twitter-card-top">
-        <div>
-          <div class="twitter-handle">@altinvestor_pro</div>
-          <div class="twitter-followers"><span class="mono">178K</span> followers</div>
-        </div>
-        <div class="twitter-rating twitter-rating--mid">2.5</div>
-      </div>
-      <p class="twitter-what">Private credit and real estate crowdfunding analysis. Publishes IRR models, waterfall scenarios, and platform comparisons. Disclosed affiliate relationships with three platforms: Yieldstreet, Fundrise, and Arrived.</p>
-      <div class="twitter-scores">
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Analytical rigor</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:62%"></div></div>
-          <span class="twitter-score-val mono">3.1</span>
-        </div>
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Transparency</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:36%"></div></div>
-          <span class="twitter-score-val mono">1.8</span>
-        </div>
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Pick accuracy</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill" style="width:50%"></div></div>
-          <span class="twitter-score-val mono">2.5 <span style="opacity:0.45;font-size:0.6em;">n=89</span></span>
-        </div>
-      </div>
-      <p class="twitter-take">"Better than the crowdfunding cheerleaders. The problem: platform ratings correlate suspiciously well with affiliate payment size. Yieldstreet was rated 4.2/5 in 2022, the same year they were building toward a $1.9M SEC fine. The affiliate disclosures are there if you squint."</p>
-      <span class="platform-flag flag-warning">Undisclosed Affiliate Conflicts</span>
-    </div>
-
-    <div class="twitter-card">
-      <div class="twitter-card-top">
-        <div>
-          <div class="twitter-handle">@crowdcapital_dan</div>
-          <div class="twitter-followers"><span class="mono">1.4M</span> followers</div>
-        </div>
-        <div class="twitter-rating twitter-rating--bad">1.1</div>
-      </div>
-      <p class="twitter-what">"This startup could 100x your money 🚀" — posts every notable Reg CF raise as a potential transformational investment. Six affiliate links in bio. Paid sponsorships from four platforms, disclosed in most posts.</p>
-      <div class="twitter-scores">
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Analytical rigor</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill twitter-score-fill--bad" style="width:16%"></div></div>
-          <span class="twitter-score-val mono">0.8</span>
-        </div>
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Transparency</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill twitter-score-fill--bad" style="width:28%"></div></div>
-          <span class="twitter-score-val mono">1.4</span>
-        </div>
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Pick accuracy</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill twitter-score-fill--bad" style="width:22%"></div></div>
-          <span class="twitter-score-val mono">1.1 <span style="opacity:0.45;font-size:0.6em;">n=218</span></span>
-        </div>
-      </div>
-      <p class="twitter-take">"Largest audience. Worst advice. Of 218 tracked recommendations: 4% positive exit, 18% shuttered, 78% still private with no material updates after 12 months. The 1.4M followers are not a quality signal — they're a market size for sponsored content."</p>
-      <span class="platform-flag flag-warning">Paid Promotion · 4% Positive Exit Rate</span>
-    </div>
-
-    <div class="twitter-card">
-      <div class="twitter-card-top">
-        <div>
-          <div class="twitter-handle">@retail_vc_vibes</div>
-          <div class="twitter-followers"><span class="mono">892K</span> followers</div>
-        </div>
-        <div class="twitter-rating twitter-rating--bad">0.8</div>
-      </div>
-      <p class="twitter-what">"How to invest like a VC for $500" lifestyle content. Aspirational aesthetic, minimal substance. Sells a $497 crowdfunding course. Posts 4-6x per day. Zero citations, zero primary sources, zero disclosed methodology.</p>
-      <div class="twitter-scores">
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Analytical rigor</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill twitter-score-fill--bad" style="width:4%"></div></div>
-          <span class="twitter-score-val mono">0.2</span>
-        </div>
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Transparency</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill twitter-score-fill--bad" style="width:10%"></div></div>
-          <span class="twitter-score-val mono">0.5</span>
-        </div>
-        <div class="twitter-score-row">
-          <span class="twitter-score-label">Pick accuracy</span>
-          <div class="twitter-score-bar"><div class="twitter-score-fill twitter-score-fill--bad" style="width:14%"></div></div>
-          <span class="twitter-score-val mono">0.7 <span style="opacity:0.45;font-size:0.6em;">n=156</span></span>
-        </div>
-      </div>
-      <p class="twitter-take">"892K followers. $497 course. 2% positive exit rate on 156 tracked picks — the worst on this list. The math is not ambiguous. The audience growth is real; the investment advice is not."</p>
-      <span class="platform-flag flag-warning">Course Seller · 2% Exit Rate · Worst Tracked</span>
-    </div>
-
-  </div>
-
-  {% include commentary.html
-    label="What this bucket teaches us"
-    text="Follower count and advice quality are inversely correlated on this list. The two accounts with no picks and the smallest audiences scored highest. The account with 1.4M followers produced a 4% positive outcome rate across 218 tracked recommendations. If you must follow investment influencers: weight rigor and transparency, ignore reach." %}
-
-</div>
-
-<hr class="rule">
-
 <div class="deal-section" style="padding-top:0;">
   <span class="deal-section-label">Synthesis</span>
   <h2>Where the white space actually is</h2>
@@ -537,4 +537,6 @@ description: "A 36-platform market map of the retail alternatives landscape, pub
     <li>Secondary liquidity is unsolved and probably unsolvable at the Reg CF scale. StartEngine Secondary has thin volume and wide spreads. The right response is honest disclosure about illiquidity, not a secondary market that implies liquidity that doesn't exist.</li>
     <li>Vertical depth beats horizontal breadth. The platforms with the worst outcomes — CrowdStreet's undifferentiated real estate marketplace, Republic's dispersed pivots — spread too thin. One sector with real deal flow and genuine expertise is worth more than a 36-category marketplace.</li>
   </ol>
+</div>
+
 </div>
