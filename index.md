@@ -113,6 +113,28 @@ description: "Community-led co-investment. Experienced leads. Same terms for eve
 
 </div>
 
+<div class="home-principles-strip">
+  <div class="container">
+    <div class="home-principles-inner">
+      <div class="home-principles-left">
+        <span class="kicker">How we operate</span>
+        <h2 class="home-principles-heading">Six structural commitments.<br>In writing. Before we have one investor.</h2>
+      </div>
+      <div class="home-principles-right">
+        <ul class="home-principles-list">
+          <li>We co-invest on every deal, on the same terms.</li>
+          <li>Every fee is published at the deal level.</li>
+          <li>Members get the same terms as the lead investor.</li>
+          <li>Diligence is real, published, and disputable.</li>
+          <li>Bad deals don't get listed, regardless of the fee.</li>
+          <li>The community is the product. Not the deal flow.</li>
+        </ul>
+        <a href="/principles/" class="home-principles-cta">Read our principles &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="home-footer-note">
   <div class="container">
     <p>This home page leads with deals and member discussion rather than marketing copy. That's not an aesthetic choice — it's a structural commitment. The community's value comes from the quality of its analysis, not from the platform's promotion of itself. A home page that leads with "democratizing investment" copy is one whose incentives run toward marketing. This one runs toward information.</p>

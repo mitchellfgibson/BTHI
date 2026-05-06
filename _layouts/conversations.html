@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversations — {{ site.title }}</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body class="body--conversations">
+
+  <header class="masthead masthead--conversations">
+    <div class="masthead-inner">
+      <nav class="masthead-nav">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/deal/' | relative_url }}">Deals</a>
+        <a href="{{ '/research/' | relative_url }}">Research</a>
+        <a href="{{ '/conversations/' | relative_url }}" class="active">Conversations</a>
+      </nav>
+      <a href="{{ '/' | relative_url }}" class="masthead-brand">
+        <span class="brand-dot">·</span>Unaccredited
+      </a>
+      <div class="masthead-meta">Community v0.1 &nbsp;·&nbsp; Prototype</div>
+    </div>
+  </header>
+
+  <div class="conversations-wrap">
+
+    <nav class="conv-sidebar">
+
+      <div class="conv-workspace">
+        <span class="conv-workspace-name"><span class="brand-dot">·</span>Unaccredited</span>
+        <span class="conv-online-dot"></span>
+      </div>
+
+      <div class="conv-section">
+        <div class="conv-section-label">Channels</div>
+        <ul class="conv-channel-list">
+          <li>
+            <a href="#channel-general" class="conv-channel-link" id="link-general">
+              <span class="conv-hash">#</span>general
+            </a>
+          </li>
+          <li>
+            <a href="#channel-deals" class="conv-channel-link" id="link-deals">
+              <span class="conv-hash">#</span>deals
+            </a>
+          </li>
+          <li>
+            <a href="#channel-stocks" class="conv-channel-link" id="link-stocks">
+              <span class="conv-hash">#</span>stocks
+            </a>
+          </li>
+          <li>
+            <a href="#channel-potential-deals" class="conv-channel-link" id="link-potential-deals">
+              <span class="conv-hash">#</span>potential-deals
+              <span class="conv-unread">3</span>
+            </a>
+          </li>
+          <li>
+            <a href="#channel-diligence" class="conv-channel-link" id="link-diligence">
+              <span class="conv-hash">#</span>diligence
+              <span class="conv-unread">1</span>
+            </a>
+          </li>
+          <li>
+            <a href="#channel-regulatory" class="conv-channel-link" id="link-regulatory">
+              <span class="conv-hash">#</span>regulatory
+              <span class="conv-unread">2</span>
+            </a>
+          </li>
+          <li>
+            <a href="#channel-portfolio" class="conv-channel-link" id="link-portfolio">
+              <span class="conv-hash">#</span>portfolio
+            </a>
+          </li>
+          <li>
+            <a href="#channel-meetups" class="conv-channel-link" id="link-meetups">
+              <span class="conv-hash">#</span>meetups
+            </a>
+          </li>
+          <li>
+            <a href="#channel-random" class="conv-channel-link" id="link-random">
+              <span class="conv-hash">#</span>random
+            </a>
+          </li>
+          <li>
+            <a href="#channel-help" class="conv-channel-link" id="link-help">
+              <span class="conv-hash">#</span>help
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="conv-section">
+        <div class="conv-section-label">Online now</div>
+        <div class="conv-members-list">
+          <div class="conv-member">
+            <span class="conv-presence conv-presence--online"></span>
+            <div class="member-avatar conv-member-avatar">AM</div>
+            <span class="conv-member-name">Alex M.</span>
+          </div>
+          <div class="conv-member">
+            <span class="conv-presence conv-presence--online"></span>
+            <div class="member-avatar conv-member-avatar">PK</div>
+            <span class="conv-member-name">Priya K.</span>
+          </div>
+          <div class="conv-member">
+            <span class="conv-presence conv-presence--away"></span>
+            <div class="member-avatar conv-member-avatar">TR</div>
+            <span class="conv-member-name">Tom R.</span>
+          </div>
+          <div class="conv-member">
+            <span class="conv-presence conv-presence--online"></span>
+            <div class="member-avatar conv-member-avatar">SC</div>
+            <span class="conv-member-name">Sarah Chen</span>
+          </div>
+          <div class="conv-member-more">+23 members</div>
+        </div>
+      </div>
+
+      <div class="conv-sidebar-foot">
+        <a href="{{ '/principles/' | relative_url }}" class="conv-principles-link">
+          Our principles &rarr;
+        </a>
+      </div>
+
+    </nav>
+
+    <div class="conv-main">
+      {{ content }}
+    </div>
+
+  </div>
+
+</body>
+</html>
