@@ -15,7 +15,7 @@ description: "Community-led co-investment. Experienced leads. Same terms for eve
   <div class="home-section" id="deals">
     <div class="home-section-header">
       <h2>Open deals this week</h2>
-      <a href="/#deals" class="home-section-link">View all open deals &rarr;</a>
+      <a href="{{ '/#deals' | relative_url }}" class="home-section-link">View all open deals &rarr;</a>
     </div>
 
     <div class="deal-grid">
@@ -97,15 +97,15 @@ description: "Community-led co-investment. Experienced leads. Same terms for eve
 
     <div class="research-list">
       <div class="research-item">
-        <a href="/research/">The 36-platform map: who's winning, who's quietly dying</a>
+        <a href="{{ '/research/' | relative_url }}">The 36-platform map: who's winning, who's quietly dying</a>
         <span class="research-item-meta">Research Desk &middot; May 2026</span>
       </div>
       <div class="research-item">
-        <a href="/deal/#why-retail-gets-screwed">Why retail investors get screwed: ten structural mechanics</a>
+        <a href="{{ '/deal/#why-retail-gets-screwed' | relative_url }}">Why retail investors get screwed: ten structural mechanics</a>
         <span class="research-item-meta">Research Desk &middot; May 2026</span>
       </div>
       <div class="research-item">
-        <a href="/research/#equity-crowdfunding">What Wefunder Investor Clubs already does (and where it falls short)</a>
+        <a href="{{ '/research/#equity-crowdfunding' | relative_url }}">What Wefunder Investor Clubs already does (and where it falls short)</a>
         <span class="research-item-meta">Research Desk &middot; May 2026</span>
       </div>
     </div>
@@ -129,7 +129,7 @@ description: "Community-led co-investment. Experienced leads. Same terms for eve
           <li>Bad deals don't get listed, regardless of the fee.</li>
           <li>The community is the product. Not the deal flow.</li>
         </ul>
-        <a href="/principles/" class="home-principles-cta">Read our principles &rarr;</a>
+        <a href="{{ '/principles/' | relative_url }}" class="home-principles-cta">Read our principles &rarr;</a>
       </div>
     </div>
   </div>

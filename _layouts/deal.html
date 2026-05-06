@@ -6,9 +6,9 @@ layout: default
 <div class="container">
 
   <nav class="breadcrumb">
-    <a href="/">Home</a>
+    <a href="{{ '/' | relative_url }}">Home</a>
     <span class="breadcrumb-sep">/</span>
-    <a href="/">Deals</a>
+    <a href="{{ '/#deals' | relative_url }}">Deals</a>
     <span class="breadcrumb-sep">/</span>
     <span>{{ deal.name }}</span>
   </nav>

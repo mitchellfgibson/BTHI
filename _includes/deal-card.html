@@ -43,6 +43,6 @@
 
   <div class="deal-card-footer">
     <span class="days-remaining">{{ include.deal.days_remaining }} days remaining</span>
-    <a href="{{ include.deal.link }}" class="deal-card-cta">View deal &rarr;</a>
+    <a href="{{ include.deal.link | relative_url }}" class="deal-card-cta">View deal &rarr;</a>
   </div>
 </article>
