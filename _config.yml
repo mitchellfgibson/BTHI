@@ -1,0 +1,25 @@
+title: "The Unaccredited"
+description: "Community-led, transparent co-investment research. Not for distribution."
+baseurl: ""
+url: ""
+
+author:
+  name: Mitchell Gibson
+  email: mitchellfgibson@berkeley.edu
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .github
+
+plugins:
+  - jekyll-seo-tag
