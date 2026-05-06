@@ -1,0 +1,56 @@
+- id: meridian
+  name: "Meridian Defense Systems"
+  description: "AI acoustic-signature recognition software for autonomous underwater defense platforms"
+  sector: "Defense Tech"
+  security: "SAFE"
+  valuation_cap: "$40M"
+  discount: "20%"
+  raise_target: "$3,200,000"
+  raise_target_short: "$3.2M"
+  community_committed: "$890,000"
+  community_pct: 28
+  days_remaining: 18
+  status: "open"
+  lead_investor: "Sarah Chen"
+  lead_role: "Partner, Paladin Capital"
+  lead_amount: "$250,000"
+  platform_committed: "$75,000"
+  link: "/deal/"
+
+- id: common-ground
+  name: "Common Ground Coffee Co."
+  description: "Regional specialty coffee chain with farmer-direct sourcing and worker equity"
+  sector: "Consumer / F&B"
+  security: "SAFE"
+  valuation_cap: "$12M"
+  discount: "20%"
+  raise_target: "$1,800,000"
+  raise_target_short: "$1.8M"
+  community_committed: "$1,400,000"
+  community_pct: 78
+  days_remaining: 9
+  status: "open"
+  lead_investor: "Marcus Webb"
+  lead_role: "Former CEO, Equator Coffees"
+  lead_amount: "$150,000"
+  platform_committed: "$25,000"
+  link: "#"
+
+- id: lastmile
+  name: "LastMile Broadband"
+  description: "Fixed-wireless broadband infrastructure serving underserved rural communities in the Mountain West"
+  sector: "Telecom Infrastructure"
+  security: "Revenue Share Note"
+  valuation_cap: "N/A (debt)"
+  discount: "N/A"
+  raise_target: "$4,500,000"
+  raise_target_short: "$4.5M"
+  community_committed: "$2,100,000"
+  community_pct: 47
+  days_remaining: 31
+  status: "open"
+  lead_investor: "Jim Kowalski"
+  lead_role: "Former VP Operations, Frontier Communications"
+  lead_amount: "$200,000"
+  platform_committed: "$50,000"
+  link: "#"

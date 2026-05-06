@@ -1,0 +1,47 @@
+- id: alex-m
+  name: "Alex M."
+  initials: "AM"
+  role: member
+  location: "San Francisco, CA"
+
+- id: priya-k
+  name: "Priya K."
+  initials: "PK"
+  role: member
+  location: "Austin, TX"
+
+- id: david-l
+  name: "David L."
+  initials: "DL"
+  role: member
+  location: "Denver, CO"
+
+- id: tom-r
+  name: "Tom R."
+  initials: "TR"
+  role: member
+  location: "Washington, DC"
+
+- id: rachel-s
+  name: "Rachel S."
+  initials: "RS"
+  role: member
+  location: "Chicago, IL"
+
+- id: sarah-chen
+  name: "Sarah Chen"
+  initials: "SC"
+  role: lead
+  title: "Partner, Paladin Capital"
+
+- id: marcus-webb
+  name: "Marcus Webb"
+  initials: "MW"
+  role: lead
+  title: "Former CEO, Equator Coffees"
+
+- id: jim-kowalski
+  name: "Jim Kowalski"
+  initials: "JK"
+  role: lead
+  title: "Former VP Operations, Frontier Communications"

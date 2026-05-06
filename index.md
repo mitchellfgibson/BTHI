@@ -1,115 +1,120 @@
 ---
 layout: default
 title: "Home"
-description: "A pitch for why Mitchell Gibson should be useful to BTHI, by someone who spent a week reading every Reg CF filing he could find."
+description: "Community-led co-investment. Experienced leads. Same terms for everyone."
 ---
 
 <div class="container">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="stamp">Confidential / Internal</div>
-    <h1>Retail investors get <em>screwed</em>.<br>Let's stop pretending otherwise.</h1>
-    <p class="deck">A pitch for why I should be useful to BTHI, by someone who has spent a week reading every Reg CF filing, SEC enforcement action, and platform 10-K he could find.</p>
-    <div class="byline">Mitchell Gibson &nbsp;·&nbsp; UC Berkeley &nbsp;·&nbsp; May 2026</div>
-  </section>
+  <div class="home-hero">
+    <span class="kicker">Community v0.1 prototype</span>
+    <h1>Three deals open. The lead investors<br>are putting in their own money.<br><em>So are we.</em></h1>
+    <p class="home-deck">This is a working prototype of what investor community infrastructure should look like. Every deal you see has a real lead with skin in the game. Every fee is published. Every investor is on the same terms.</p>
+  </div>
 
-  <!-- SECTION 01 -->
-  <section class="section">
-    <div class="section-header">
-      <span class="section-number">01 ————</span>
-      <h2>The pitch in one paragraph</h2>
+  <div class="home-section" id="deals">
+    <div class="home-section-header">
+      <h2>Open deals this week</h2>
+      <a href="/deal/" class="home-section-link">View all open deals &rarr;</a>
     </div>
-    <p>I'm a Berkeley economics student with a background in comparative political economy from LSE. I cost nothing in payroll. In one week of self-directed research, I produced a 36-platform market map with bucket classifications, a structural breakdown of ten mechanics that systematically disadvantage retail investors, a regulatory architecture summary covering Reg CF, Reg A+, and the broker-dealer landscape, and a deal evaluation scorecard weighted for the non-accredited investor context. If that's what one week of unpaid curiosity looks like, imagine what a defined scope does.</p>
-    <p>I'm not pitching a job. I'm pitching a working relationship — market research, regulatory analysis, deal evaluation — scoped however is useful to you, compensated however makes sense.</p>
-  </section>
 
-  <!-- SECTION 02 -->
-  <section class="section">
-    <div class="section-header">
-      <span class="section-number">02 ————</span>
-      <h2>What I actually built</h2>
+    <div class="deal-grid">
+      {% for deal in site.data.deals %}
+        {% include deal-card.html deal=deal %}
+      {% endfor %}
     </div>
-    <p>Four outputs, one week, zero prompting. Click through to see the work.</p>
+  </div>
 
-    <div class="work-grid">
-      <a href="/research/" class="work-card">
-        <div class="work-card-number">Output 01</div>
-        <h3>36-Platform Market Map</h3>
-        <p>Six buckets. Who's winning, who's dying, who's quietly already doing what BTHI wants to do. Wefunder, Fundrise, Yieldstreet, AngelList — all benchmarked.</p>
-        <span class="work-card-link">View Research →</span>
-      </a>
-      <a href="/deals/" class="work-card">
-        <div class="work-card-number">Output 02</div>
-        <h3>Why Retail Investors Get Screwed</h3>
-        <p>Ten structural mechanics. Information asymmetry through cap table treatment. The base rate math nobody shows you at the investment stage.</p>
-        <span class="work-card-link">View Analysis →</span>
-      </a>
-      <div class="work-card" style="cursor: default;">
-        <div class="work-card-number">Output 03</div>
-        <h3>Regulatory Architecture</h3>
-        <p>Reg CF, Reg A+, broker-dealer requirements, funding portal rules, state Blue Sky exemptions, and where BTHI's model sits in the current legal framework.</p>
-        <span class="work-card-link" style="opacity:0.4;">Available on request</span>
+  <div class="home-section">
+    <div class="home-section-header">
+      <h2>What members are talking about</h2>
+    </div>
+
+    <div class="threads-list">
+
+      <div class="thread-with-commentary">
+        <div class="thread-preview">
+          <div class="member-avatar">AM</div>
+          <div class="thread-body">
+            <span class="thread-deal-tag">Meridian Defense Systems</span>
+            <p class="thread-text">"The $40M cap feels high for pre-revenue. Can Sarah walk through the comp set that justified this? I've seen SBIR-backed defense companies priced at $15–25M at the same stage and can't reconcile the difference." — <strong>4 replies</strong>, including a detailed response from the lead investor</p>
+            <div class="thread-meta">
+              <span>Alex M.</span>
+              <span>2 days ago</span>
+              <span>4 replies</span>
+            </div>
+          </div>
+        </div>
+        {% include commentary.html
+          label="Why we're showing this"
+          text="Member-led valuation skepticism is the system working. The platform doesn't screen deals for quality. It gives members the information and the lead investor's contact to run their own analysis. This thread already produced a detailed comp set from the lead." %}
       </div>
-      <a href="/deals/#scorecard" class="work-card">
-        <div class="work-card-number">Output 04</div>
-        <h3>Deal Evaluation Scorecard</h3>
-        <p>Eight weighted criteria for evaluating Reg CF deals from the non-accredited investor perspective. Built to operationalize diligence, not just describe it.</p>
-        <span class="work-card-link">View Scorecard →</span>
-      </a>
-    </div>
-  </section>
 
-  <!-- SECTION 03 -->
-  <section class="section">
-    <div class="section-header">
-      <span class="section-number">03 ————</span>
-      <h2>The thesis</h2>
-    </div>
-
-    <p>The Reg CF and Reg A+ markets combined cleared $925M in 2026. The top three platforms — Wefunder, StartEngine, and Republic — control roughly 67% of volume. None of them has meaningful skin in the game. Their business model is transaction fees on deal flow, which means their incentive is deal volume, not deal quality.</p>
-
-    <p>The secondary market is essentially nonexistent. Governance rights are pooled into SPVs that have no leverage. Information rights are rarely enforced. Exit timelines are undefined. The median Reg CF investor paid a premium to a crowdfunding portal to access deals that sophisticated investors passed on, in a structure that guarantees they're last in line when something goes wrong.</p>
-
-    <div class="pull-quote">
-      <p>"The whole industry is built on telling unaccredited investors they finally have access, while quietly making sure they pay more, get less, and exit last."</p>
-    </div>
-
-    <p>BTHI's thesis — community-led co-investment alongside experienced investors on the same terms — is the right answer to this structural failure. The "same terms" piece is the hard part. Getting non-accredited investors genuine co-investment rights, not just economics, requires threading a needle between Reg CF's limits, broker-dealer registration requirements, and the way SPV mechanics work in practice.</p>
-
-    <p>That's exactly the kind of regulatory-structural problem I find interesting. Not just "what's the rule" but "what does the rule actually allow, and how do you build something legitimate and defensible inside it."</p>
-  </section>
-
-  <!-- SECTION 04 -->
-  <section class="section">
-    <div class="section-header">
-      <span class="section-number">04 ————</span>
-      <h2>Where I want to plug in</h2>
-    </div>
-    <p>Three lanes, in rough order of where I'd add most immediate value:</p>
-
-    <div class="lanes-grid">
-      <div class="lane">
-        <div class="lane-number">Lane 01</div>
-        <h3>Competitive Intelligence</h3>
-        <p>Ongoing tracking of what Wefunder, StartEngine, and the real estate platforms are doing — new product features, regulatory filings, capital raises, and strategic shifts. The market map is a snapshot; what's more useful is a living tracker.</p>
+      <div class="thread-with-commentary">
+        <div class="thread-preview">
+          <div class="member-avatar">PK</div>
+          <div class="thread-body">
+            <span class="thread-deal-tag">Common Ground Coffee Co.</span>
+            <p class="thread-text">"I found Marcus Webb's previous exit — Equator Coffees sold to private equity in 2021. Pulled the ADA data: they were running 7 locations with $4.2M in revenue at exit. Common Ground's $12M cap implies a 3x premium to that comp. Is the worker-equity model the justification, or is something else going on?" — <strong>6 replies</strong></p>
+            <div class="thread-meta">
+              <span>Priya K.</span>
+              <span>1 day ago</span>
+              <span>6 replies</span>
+            </div>
+          </div>
+        </div>
+        {% include commentary.html
+          label="Why we're showing this"
+          text="One member spending two hours on public records produced a valuation anchor that changes the conversation for everyone in the community. This is what community diligence looks like when you give people real information to work with." %}
       </div>
-      <div class="lane">
-        <div class="lane-number">Lane 02</div>
-        <h3>Regulatory &amp; Compliance Analysis</h3>
-        <p>Reading SEC no-action letters, enforcement actions, and FINRA guidance so you don't have to. When a new proposed rule drops, turning a 200-page comment file into a two-page memo on what it means for BTHI's structure.</p>
+
+      <div class="thread-with-commentary">
+        <div class="thread-preview">
+          <div class="member-avatar">DL</div>
+          <div class="thread-body">
+            <span class="thread-deal-tag">LastMile Broadband</span>
+            <p class="thread-text">"I want to push back on whether revenue-share debt is appropriate for retail investors at all. Revenue share means your return is entirely correlated to a single company's operating performance, with no collateral and no fixed interest rate. A rural telecom startup is not a bond. Can Jim explain the downside scenario?" — <strong>9 replies</strong></p>
+            <div class="thread-meta">
+              <span>David L.</span>
+              <span>3 days ago</span>
+              <span>9 replies</span>
+            </div>
+          </div>
+        </div>
+        {% include commentary.html
+          label="Why we're showing this"
+          text="Some deals should be questioned at the structural level, not just the valuation level. A member raising a legitimate concern about whether a security type is appropriate for retail investors is the community functioning as a check. We don't moderate this out." %}
       </div>
-      <div class="lane">
-        <div class="lane-number">Lane 03</div>
-        <h3>Deal Evaluation Framework</h3>
-        <p>Applying and iterating the scorecard against live Reg CF deals on Wefunder and StartEngine. Building pattern recognition on what distinguishes the top decile of retail-accessible deals from the rest.</p>
-      </div>
+
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div class="home-section-header">
+      <h2>From the research desk</h2>
+      <a href="/research/" class="home-section-link">All research &rarr;</a>
     </div>
 
-    <div class="callout callout-red" style="margin-top: 2.5rem;">
-      <div class="callout-label">Bottom line</div>
-      <p>I'm not asking for a title or a salary. I'm asking for a scope and a feedback loop. The research this site contains took one week. Give me a problem worth solving and I'll show you what a month looks like.</p>
+    <div class="research-list">
+      <div class="research-item">
+        <a href="/research/">The 36-platform map: who's winning, who's quietly dying</a>
+        <span class="research-item-meta">Research Desk &middot; May 2026</span>
+      </div>
+      <div class="research-item">
+        <a href="/deal/#why-retail-gets-screwed">Why retail investors get screwed: ten structural mechanics</a>
+        <span class="research-item-meta">Research Desk &middot; May 2026</span>
+      </div>
+      <div class="research-item">
+        <a href="/research/#equity-crowdfunding">What Wefunder Investor Clubs already does (and where it falls short)</a>
+        <span class="research-item-meta">Research Desk &middot; May 2026</span>
+      </div>
     </div>
-  </section>
+  </div>
 
+</div>
+
+<div class="home-footer-note">
+  <div class="container">
+    <p>This home page leads with deals and member discussion rather than marketing copy. That's not an aesthetic choice — it's a structural commitment. The community's value comes from the quality of its analysis, not from the platform's promotion of itself. A home page that leads with "democratizing investment" copy is one whose incentives run toward marketing. This one runs toward information.</p>
+  </div>
 </div>

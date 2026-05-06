@@ -1,11 +1,10 @@
-title: "The Unaccredited"
-description: "Community-led, transparent co-investment research. Not for distribution."
+title: "Unaccredited"
+description: "Community-led co-investment. Experienced leads. Same terms for everyone."
 baseurl: ""
 url: ""
 
 author:
-  name: Mitchell Gibson
-  email: mitchellfgibson@berkeley.edu
+  name: Unaccredited Research Desk
 
 markdown: kramdown
 highlighter: rouge

@@ -1,0 +1,48 @@
+<article class="deal-card">
+  <div class="deal-card-top">
+    <span class="sector-tag">{{ include.deal.sector }}</span>
+    <span class="security-tag">{{ include.deal.security }}</span>
+  </div>
+
+  <h3 class="deal-card-name">{{ include.deal.name }}</h3>
+  <p class="deal-card-desc">{{ include.deal.description }}</p>
+
+  <div class="deal-card-terms">
+    <div class="deal-term">
+      <span class="term-label">Cap</span>
+      <span class="term-value mono">{{ include.deal.valuation_cap }}</span>
+    </div>
+    <div class="deal-term">
+      <span class="term-label">Discount</span>
+      <span class="term-value mono">{{ include.deal.discount }}</span>
+    </div>
+    <div class="deal-term">
+      <span class="term-label">Target</span>
+      <span class="term-value mono">{{ include.deal.raise_target_short }}</span>
+    </div>
+  </div>
+
+  <div class="deal-card-lead">
+    <div class="lead-avatar">{{ include.deal.lead_investor | split: " " | map: "first" | join: "" | slice: 0 }}{{ include.deal.lead_investor | split: " " | last | slice: 0 }}</div>
+    <div class="lead-info">
+      <div class="lead-name">{{ include.deal.lead_investor }}</div>
+      <div class="lead-role">{{ include.deal.lead_role }}</div>
+    </div>
+    <div class="lead-amount mono">{{ include.deal.lead_amount }}</div>
+  </div>
+
+  <div class="deal-fill-wrap">
+    <div class="deal-fill-bar">
+      <div class="deal-fill-progress" style="width: {{ include.deal.community_pct }}%"></div>
+    </div>
+    <div class="deal-fill-meta">
+      <span class="mono green">{{ include.deal.community_committed }}</span>
+      <span class="fill-of">of {{ include.deal.raise_target_short }} &nbsp;·&nbsp; <strong>{{ include.deal.community_pct }}%</strong> filled</span>
+    </div>
+  </div>
+
+  <div class="deal-card-footer">
+    <span class="days-remaining">{{ include.deal.days_remaining }} days remaining</span>
+    <a href="{{ include.deal.link }}" class="deal-card-cta">View deal &rarr;</a>
+  </div>
+</article>

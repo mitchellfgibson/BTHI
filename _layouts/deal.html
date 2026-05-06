@@ -1,0 +1,148 @@
+---
+layout: default
+---
+{% assign deal = site.data.deals | where: "id", page.deal_id | first %}
+
+<div class="container">
+
+  <nav class="breadcrumb">
+    <a href="/">Home</a>
+    <span class="breadcrumb-sep">/</span>
+    <a href="/">Deals</a>
+    <span class="breadcrumb-sep">/</span>
+    <span>{{ deal.name }}</span>
+  </nav>
+
+  <div class="deal-header">
+    <div class="deal-header-main">
+      <div class="deal-header-tags">
+        <span class="sector-tag">{{ deal.sector }}</span>
+        <span class="security-tag">{{ deal.security }}</span>
+        <span class="status-pill status-open">Open &nbsp;&middot;&nbsp; {{ deal.days_remaining }} days remaining</span>
+      </div>
+      <h1 class="deal-title">{{ deal.name }}</h1>
+      <p class="deal-description-lg">{{ deal.description }}</p>
+    </div>
+    <div class="deal-header-metrics">
+      <div class="deal-metric">
+        <span class="deal-metric-label">Raise target</span>
+        <span class="deal-metric-value mono">{{ deal.raise_target_short }}</span>
+      </div>
+      <div class="deal-metric">
+        <span class="deal-metric-label">Valuation cap</span>
+        <span class="deal-metric-value mono">{{ deal.valuation_cap }}</span>
+      </div>
+      <div class="deal-metric">
+        <span class="deal-metric-label">Discount</span>
+        <span class="deal-metric-value mono">{{ deal.discount }}</span>
+      </div>
+      <div class="deal-metric">
+        <span class="deal-metric-label">Committed</span>
+        <span class="deal-metric-value mono green">{{ deal.community_committed }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="deal-fill-bar deal-fill-bar--lg">
+    <div class="deal-fill-progress" style="width: {{ deal.community_pct }}%"></div>
+  </div>
+  <div class="deal-fill-meta deal-fill-meta--lg">
+    <span class="mono green">{{ deal.community_committed }}</span> of <span class="mono">{{ deal.raise_target_short }}</span> committed &nbsp;&middot;&nbsp; <strong>{{ deal.community_pct }}%</strong> filled
+  </div>
+
+  <div class="deal-layout">
+
+    <div class="deal-main">
+      {{ content }}
+    </div>
+
+    <aside class="deal-sidebar">
+
+      <div class="invest-widget">
+        <div class="invest-widget-header">
+          <span class="invest-widget-label">Co-invest with the lead</span>
+        </div>
+
+        <div class="lead-block">
+          <div class="lead-avatar lead-avatar--lg">{{ deal.lead_investor | split: " " | first | slice: 0 }}{{ deal.lead_investor | split: " " | last | slice: 0 }}</div>
+          <div>
+            <div class="lead-name-lg">{{ deal.lead_investor }}</div>
+            <div class="lead-role-sm">{{ deal.lead_role }}</div>
+          </div>
+        </div>
+
+        <div class="invest-terms-row">
+          <div class="invest-term">
+            <span class="invest-term-label">Lead investing</span>
+            <span class="invest-term-value mono">{{ deal.lead_amount }}</span>
+          </div>
+          <div class="invest-term">
+            <span class="invest-term-label">Platform investing</span>
+            <span class="invest-term-value mono">{{ deal.platform_committed }}</span>
+          </div>
+        </div>
+
+        <div class="invest-same-terms">
+          {{ deal.security }} &nbsp;&middot;&nbsp; {{ deal.valuation_cap }} cap &nbsp;&middot;&nbsp; {{ deal.discount }} discount<br>
+          <strong>Same terms for every investor.</strong>
+        </div>
+
+        <div class="invest-input-group">
+          <label class="invest-input-label">Your investment</label>
+          <div class="invest-input-wrap">
+            <span class="invest-input-prefix">$</span>
+            <input type="number" class="invest-input" placeholder="500" min="100" step="100">
+          </div>
+          <div class="invest-minimum">$100 minimum &nbsp;·&nbsp; no accreditation required</div>
+        </div>
+
+        <button class="invest-cta">Reserve allocation &rarr;</button>
+        <p class="invest-cta-note">No money moves until the round closes. You can cancel anytime.</p>
+      </div>
+
+      <div class="sidebar-disclosure">
+        <div class="sidebar-disclosure-section">
+          <div class="sidebar-disclosure-heading">What you'll pay</div>
+          <div class="sidebar-fee-row">
+            <span>Platform fee</span>
+            <span class="mono">2.0% (paid by company)</span>
+          </div>
+          <div class="sidebar-fee-row">
+            <span>Carry to lead</span>
+            <span class="mono">10% of your gains only</span>
+          </div>
+          <div class="sidebar-fee-row">
+            <span>Subscription</span>
+            <span class="mono green">None</span>
+          </div>
+          <div class="sidebar-fee-row">
+            <span>Paid promotion tier</span>
+            <span class="mono green">None</span>
+          </div>
+          <div class="sidebar-fee-row">
+            <span>Hidden spreads</span>
+            <span class="mono green">None</span>
+          </div>
+        </div>
+
+        <div class="sidebar-disclosure-section">
+          <div class="sidebar-disclosure-heading">What you get</div>
+          <ul class="sidebar-rights-list">
+            <li>Pro-rata rights on the next priced round</li>
+            <li>Quarterly investor updates</li>
+            <li>Voting rights on major events (sale, dissolution)</li>
+            <li>Full information rights</li>
+            <li>Same terms as the lead investor</li>
+          </ul>
+        </div>
+      </div>
+
+      {% include commentary.html
+        label="Why this structure"
+        text="Most retail platforms give non-accredited investors a stripped-down version of the deal — no pro-rata, no information rights, no governance. We don't. Same terms as the lead. Read our principles for the full reasoning." %}
+
+    </aside>
+
+  </div>
+
+</div>

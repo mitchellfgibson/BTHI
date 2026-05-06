@@ -1,0 +1,14 @@
+<div class="comment{% if include.reply %} comment--reply{% endif %}">
+  <div class="comment-meta">
+    <div class="member-avatar{% if include.role == 'lead' %} member-avatar--lead{% endif %}{% if include.role == 'founder' %} member-avatar--founder{% endif %}">{{ include.initials }}</div>
+    <div class="comment-author-wrap">
+      <span class="comment-author">{{ include.name }}</span>
+      {% if include.badge %}<span class="comment-badge comment-badge--{{ include.role }}">{{ include.badge }}</span>{% endif %}
+      <span class="comment-time">{{ include.time }}</span>
+    </div>
+  </div>
+  {% if include.reply_to %}<div class="comment-reply-label">Replying to {{ include.reply_to }}</div>{% endif %}
+  <div class="comment-body">
+    <p>{{ include.text }}</p>
+  </div>
+</div>

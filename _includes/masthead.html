@@ -2,13 +2,13 @@
   <div class="masthead-inner">
     <nav class="masthead-nav">
       <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a>
+      <a href="{{ '/deal/' | relative_url }}"{% if page.url contains '/deal' %} class="active"{% endif %}>Deals</a>
       <a href="{{ '/research/' | relative_url }}"{% if page.url contains '/research' %} class="active"{% endif %}>Research</a>
-      <a href="{{ '/deals/' | relative_url }}"{% if page.url contains '/deals' %} class="active"{% endif %}>Deals</a>
-      <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about' %} class="active"{% endif %}>About</a>
+      <a href="{{ '/principles/' | relative_url }}"{% if page.url contains '/principles' %} class="active"{% endif %}>Principles</a>
     </nav>
     <a href="{{ '/' | relative_url }}" class="masthead-brand">
-      <span class="brand-dot">·</span>The Unaccredited
+      <span class="brand-dot">·</span>Unaccredited
     </a>
-    <div class="masthead-meta">Vol. 1 &middot; Issue 01 &middot; May 2026</div>
+    <div class="masthead-meta">Community v0.1 &nbsp;·&nbsp; Prototype</div>
   </div>
 </header>

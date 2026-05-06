@@ -1,259 +1,338 @@
 ---
 layout: page
 title: "The <em>Field</em>"
-kicker: "Market Research"
-subtitle: "36 platforms · 6 buckets · who's winning, who's dying, who's quietly already doing what BTHI wants to do"
-byline: "Mitchell Gibson · UC Berkeley · May 2026"
-description: "A 36-platform market map of the retail alternatives landscape: equity crowdfunding, real estate, private credit, pre-IPO secondaries, specialty assets, and syndicates."
+kicker: "Research Desk"
+subtitle: "A working map of who's winning, who's dying, and who's quietly already doing what we're building."
+byline: "Research Desk · May 2026 · 36 platforms · 6 buckets"
+description: "A 36-platform market map of the retail alternatives landscape, published by the Unaccredited research desk."
 ---
 
-<!-- TL;DR METRICS -->
 <div class="metrics-grid">
   <div class="metric-card">
     <div class="metric-value">$925M</div>
-    <div class="metric-label">Combined Reg CF + Reg A+ volume, 2025</div>
+    <div class="metric-label">Reg CF + Reg A+ combined volume, 2025</div>
   </div>
   <div class="metric-card">
     <div class="metric-value">$7B+</div>
-    <div class="metric-label">Fundrise AUM — largest retail RE platform</div>
+    <div class="metric-label">Fundrise AUM — the retail RE benchmark</div>
   </div>
   <div class="metric-card">
     <div class="metric-value">67%</div>
-    <div class="metric-label">Reg CF market share held by top 3 platforms</div>
+    <div class="metric-label">Reg CF volume held by three platforms</div>
   </div>
   <div class="metric-card">
     <div class="metric-value">83</div>
-    <div class="metric-label">SEC-registered funding portals — most zombies</div>
+    <div class="metric-label">SEC-registered funding portals — most inactive</div>
   </div>
 </div>
 
-<p>This map covers every platform of consequence in retail alternatives as of Q1 2026. The methodology: SEC EDGAR filings, Form C disclosures, annual Reg CF volume reports from Crowdfund Capital Advisors, FINRA funding portal registration records, platform-published data, and where numbers were unavailable, triangulation from third-party coverage. Nothing is estimated without noting it.</p>
+<p>This map is published for members. It is not investment advice and does not constitute a recommendation of any platform. It is our attempt to understand the competitive landscape clearly, because our members deserve to know where we sit relative to every alternative.</p>
 
 <p>Six buckets. The taxonomy reflects how these businesses actually compete, not how they market themselves.</p>
 
 <hr class="rule">
 
-<!-- BUCKET 01: EQUITY CROWDFUNDING -->
-<div class="bucket">
+<!-- BUCKET 01 -->
+<div class="bucket" id="equity-crowdfunding">
   <div class="bucket-header">
-    <span class="bucket-number">01 ————</span>
+    <span class="bucket-number">01</span>
     <span class="bucket-title">Equity Crowdfunding</span>
   </div>
-  <p>The Reg CF-native platforms. These are the direct competitive context for BTHI's community investment thesis. Four platforms control the category; below them, the long tail is largely dead.</p>
+  <p class="bucket-intro">The Reg CF-native platforms. The most direct competitive context for what we're building. Four platforms control the category. Below them, the long tail is largely dead — most of the 83 SEC-registered funding portals have processed fewer than three raises.</p>
 
   <div class="platform-grid">
     <div class="platform-card">
-      <div class="platform-name">Wefunder</div>
-      <div class="platform-stat">$109M raised · 1.5M registered users</div>
-      <div class="platform-note">The clear market leader on Reg CF volume. Introduced <strong>Investor Clubs</strong> in 2023 — a community-led co-investment feature that lets groups pool conviction and invest together. This is the most direct structural competitor to BTHI's thesis. Club leaders can drive deal flow; economics shared. Non-accredited accessible.</div>
-      <span class="platform-flag flag-competitor">Existential Competitor</span>
+      <div class="platform-card-top">
+        <span class="platform-name">Wefunder</span>
+        <span class="platform-access access-retail">Retail</span>
+      </div>
+      <div class="platform-stat">$109M raised · 1.5M users</div>
+      <div class="platform-take">Clear Reg CF volume leader. Introduced <strong>Investor Clubs</strong> in 2023 — community co-investment groups where a club leader drives deal flow and members follow. This is the most direct structural analog to what we're building, applied to startup equity rather than structured co-investment. Their existence validates the community thesis. Their execution leaves the lead accountability and diligence questions unanswered.</div>
+      <span class="platform-flag flag-competitor">Direct Reference Point</span>
     </div>
     <div class="platform-card">
-      <div class="platform-name">StartEngine</div>
+      <div class="platform-card-top">
+        <span class="platform-name">StartEngine</span>
+        <span class="platform-access access-retail">Retail</span>
+      </div>
       <div class="platform-stat">$89M raised · secondary market live</div>
-      <div class="platform-note">Second in Reg CF volume. Differentiated by <strong>StartEngine Secondary</strong> — a marketplace for trading existing equity crowdfunding positions. Addresses the liquidity problem directly, though volume is thin. Also runs Reg A+ raises at higher minimums. Howard Marks (the StartEngine one) is aggressive on marketing.</div>
-      <span class="platform-flag flag-watch">Watch: Liquidity Play</span>
+      <div class="platform-take">Second in Reg CF volume. Differentiated by StartEngine Secondary — a marketplace for trading existing crowdfunding positions. Thin volume, wide spreads, but the liquidity problem is at least acknowledged. Also runs Reg A+ at higher minimums. Aggressive marketing; deal curation is limited.</div>
+      <span class="platform-flag flag-watch">Secondary Market Attempt</span>
     </div>
     <div class="platform-card">
-      <div class="platform-name">DealMaker</div>
-      <div class="platform-stat">$66M raised · capital markets execution focus</div>
-      <div class="platform-note">White-label infrastructure play — companies use DealMaker's rails to run their own fundraises rather than appearing on a marketplace. Positioned as capital markets execution, not retail discovery. Growing through enterprise rather than consumer. Less directly competitive but worth watching as infrastructure.</div>
+      <div class="platform-card-top">
+        <span class="platform-name">DealMaker</span>
+        <span class="platform-access access-both">Both</span>
+      </div>
+      <div class="platform-stat">$66M raised · white-label infrastructure</div>
+      <div class="platform-take">White-label rails — companies run their own raises using DealMaker's technology rather than appearing on a shared marketplace. B2B infrastructure play, not retail discovery. Growing through enterprise channel. Less competitive with us directly; more relevant as a reference for what the infrastructure layer looks like.</div>
     </div>
     <div class="platform-card">
-      <div class="platform-name">Republic</div>
-      <div class="platform-stat">$20M raised · fading from Reg CF</div>
-      <div class="platform-note">Once the quality-curation leader of Reg CF. Has pivoted toward crypto, international markets, and accredited-investor product (Republic Capital). Reg CF volume is in decline. The brand still has equity with tech-forward retail investors but the product has dispersed. Cautionary tale on focus.</div>
+      <div class="platform-card-top">
+        <span class="platform-name">Republic</span>
+        <span class="platform-access access-retail">Retail</span>
+      </div>
+      <div class="platform-stat">$20M Reg CF · pivot to crypto + international</div>
+      <div class="platform-take">Once the quality-curation leader of Reg CF. Has dispersed: crypto, international markets, Republic Capital (accredited). Reg CF volume in decline. The brand retains equity with tech-forward retail investors but the focus is gone. A cautionary tale about trying to be too many things to too many markets.</div>
       <span class="platform-flag flag-warning">Category Exit Risk</span>
     </div>
   </div>
 
-  <div class="callout" style="margin-top: 1.5rem;">
-    <div class="callout-label">Strategic Note</div>
-    <p>Wefunder's Investor Clubs is the most important competitive development in this category in the last two years. It directly addresses BTHI's thesis — community-led co-investment — but for equity-stage startups rather than the IR/structured-deal context BTHI is targeting. The question is whether Wefunder's model validates the community thesis or saturates it.</p>
-  </div>
+  {% include commentary.html
+    label="What this bucket teaches us"
+    text="Wefunder's Investor Clubs is the most structurally interesting development in this category in two years. It proves retail investors will organize around a trusted lead. What it doesn't prove is that the lead has accountability, that the diligence is real, or that the terms are fair. Those are the three things we're trying to add." %}
 </div>
 
 <hr class="rule">
 
-<!-- BUCKET 02: REAL ESTATE -->
+<!-- BUCKET 02 -->
 <div class="bucket">
   <div class="bucket-header">
-    <span class="bucket-number">02 ————</span>
+    <span class="bucket-number">02</span>
     <span class="bucket-title">Real Estate</span>
   </div>
-  <p>The largest category by AUM in retail alternatives. Mostly Reg A+ or private placement structures. Non-accredited access exists but is handled differently across platforms — some require it, some prefer accredited.</p>
+  <p class="bucket-intro">The largest category by AUM in retail alternatives. Mostly Reg A+ or private placement structures. Non-accredited access varies — some platforms require it, some prefer accredited.</p>
 
   <div class="platform-grid">
     <div class="platform-card">
-      <div class="platform-name">Fundrise</div>
+      <div class="platform-card-top">
+        <span class="platform-name">Fundrise</span>
+        <span class="platform-access access-retail">Retail</span>
+      </div>
       <div class="platform-stat">$7B+ AUM · 400,000+ investors</div>
-      <div class="platform-note">The category definition. Runs via Reg A+ eREITs and eFunds. Non-accredited accessible. Vertically integrated — raises capital, acquires assets, manages them, distributes returns. Has expanded into venture (Fundrise Venture) and credit. The $10 minimum is a marketing hook; real products start at $1,000. Dividends are modest but consistent.</div>
+      <div class="platform-take">The category definition. Reg A+ eREITs. Non-accredited accessible. Vertically integrated: raises capital, acquires assets, manages, distributes. Expanded into venture and credit. The $10 minimum is marketing; real products start at $1,000. Consistent dividends. The reference case for retail RE done professionally.</div>
     </div>
     <div class="platform-card">
-      <div class="platform-name">CrowdStreet</div>
-      <div class="platform-stat">Accredited only · Nightingale fraud — $63M lost</div>
-      <div class="platform-note">The cautionary tale for 2023. CrowdStreet listed Nightingale Properties deals; Nightingale's principal diverted $63M in investor funds. CrowdStreet bore no legal liability — they were a marketplace, not a fiduciary — but the reputational damage was severe. Platform has pivoted to institutional-grade vetting but the incident defines the "marketplace without diligence" failure mode.</div>
-      <span class="platform-flag flag-warning">Fraud Cautionary Tale</span>
+      <div class="platform-card-top">
+        <span class="platform-name">CrowdStreet</span>
+        <span class="platform-access access-accredited">Accredited</span>
+      </div>
+      <div class="platform-stat">Nightingale fraud · $63M investor losses</div>
+      <div class="platform-take">The 2023 cautionary tale. CrowdStreet listed Nightingale Properties deals; the principal diverted $63M in investor funds. CrowdStreet bore no legal liability — marketplace, not fiduciary. The reputational collapse was total. Defines the "marketplace without diligence" failure mode. Read this case study before investing in any platform that doesn't co-invest.</div>
+      <span class="platform-flag flag-warning">Fraud · $63M Lost</span>
     </div>
     <div class="platform-card">
-      <div class="platform-name">RealtyMogul</div>
-      <div class="platform-stat">$1B+ invested · accredited + some Reg A+</div>
-      <div class="platform-note">More conservative than peers. Offers a non-accredited-accessible REIT product alongside accredited individual deals. Underwriting team does actual asset diligence. Lower volume, higher selectivity. The "institutional quality for retail" positioning is credible but limits growth.</div>
+      <div class="platform-card-top">
+        <span class="platform-name">RealtyMogul</span>
+        <span class="platform-access access-both">Both</span>
+      </div>
+      <div class="platform-stat">$1B+ invested · conservative underwriting</div>
+      <div class="platform-take">More conservative than peers. Non-accredited REIT product alongside accredited individual deals. Underwriting team does actual asset diligence. Lower volume, higher selectivity. The institutional-quality positioning is credible but limits growth. Not a cautionary tale — a valid alternative approach.</div>
     </div>
     <div class="platform-card">
-      <div class="platform-name">Arrived</div>
-      <div class="platform-stat">$100M+ · single-family rental focus</div>
-      <div class="platform-note">Amazon-backed (Jeff Bezos' family office). Fractional ownership of single-family rentals at $100 minimums. Non-accredited accessible via Reg A+. Simple pitch, simple product. No secondary market. Returns are real but thin. The Amazon association drives awareness beyond what the unit economics merit.</div>
+      <div class="platform-card-top">
+        <span class="platform-name">Arrived</span>
+        <span class="platform-access access-retail">Retail</span>
+      </div>
+      <div class="platform-stat">$100M+ · Amazon-backed · $100 minimum</div>
+      <div class="platform-take">Fractional single-family rentals. Non-accredited via Reg A+. Simple product. Amazon family office backing drives awareness beyond what unit economics merit. No secondary market. Returns real but thin. The $100 minimum is the hook; the returns won't change anyone's life at that entry point.</div>
     </div>
   </div>
+
+  {% include commentary.html
+    label="What this bucket teaches us"
+    text="CrowdStreet is the permanent answer to 'why does the platform need to co-invest?' A marketplace that earns fees on deal volume has no incentive to turn down a bad deal. CrowdStreet listed Nightingale because Nightingale paid to be listed. We are not a marketplace. We co-invest or we don't list." %}
 </div>
 
 <hr class="rule">
 
-<!-- BUCKET 03: PRIVATE CREDIT -->
+<!-- BUCKET 03 -->
 <div class="bucket">
   <div class="bucket-header">
-    <span class="bucket-number">03 ————</span>
+    <span class="bucket-number">03</span>
     <span class="bucket-title">Private Credit</span>
   </div>
-  <p>Yield-focused products targeting the retail investor's hunt for income. The credit quality variance here is enormous. Some platforms run institutional-grade underwriting; others are effectively high-yield bond alternatives with worse liquidity and less transparency.</p>
+  <p class="bucket-intro">Yield-focused products for retail investors hunting for income. Credit quality variance is enormous across this category — from institutional-grade underwriting to products that are effectively high-yield bond alternatives with worse liquidity and less transparency.</p>
 
   <div class="platform-grid">
     <div class="platform-card">
-      <div class="platform-name">Yieldstreet</div>
-      <div class="platform-stat">$3B+ originations · $1.9M SEC fine (2023)</div>
-      <div class="platform-note">The largest cautionary tale in retail private credit. <strong>SEC fine of $1.9M</strong> for misleading investors about collateral and risk. Four deals with total principal losses. Twenty-three deals currently on the watchlist. The marine finance portfolio — their flagship early product — became a case study in collateral misrepresentation. Has pivoted to a more conservative, fund-of-funds structure but the trust damage is real.</div>
-      <span class="platform-flag flag-warning">SEC Enforcement · Losses</span>
+      <div class="platform-card-top">
+        <span class="platform-name">Yieldstreet</span>
+        <span class="platform-access access-both">Both</span>
+      </div>
+      <div class="platform-stat">$3B+ originations · $1.9M SEC fine · 4 total losses</div>
+      <div class="platform-take">The largest retail private credit cautionary tale. SEC fined $1.9M for misleading investors on collateral and risk. Four deals with complete principal losses. Twenty-three deals currently watchlisted. The marine finance portfolio — their flagship early product — became a case study in collateral misrepresentation. Has pivoted to a more conservative fund-of-funds structure. The trust damage is permanent.</div>
+      <span class="platform-flag flag-warning">SEC Fine · Losses · Watchlisted</span>
     </div>
     <div class="platform-card">
-      <div class="platform-name">Percent</div>
-      <div class="platform-stat">$1B+ · accredited only · institutional focus</div>
-      <div class="platform-note">Private credit marketplace focused on asset-backed lending — SMB, consumer, specialty finance. Accredited only. More transparent than peers — deal-level data available, historical performance published. The institutional-quality underwriting shows in actual performance. Not a BTHI competitor but a reference architecture for what good private credit diligence looks like.</div>
+      <div class="platform-card-top">
+        <span class="platform-name">Percent</span>
+        <span class="platform-access access-accredited">Accredited</span>
+      </div>
+      <div class="platform-stat">$1B+ · institutional-grade underwriting</div>
+      <div class="platform-take">Private credit marketplace focused on asset-backed lending. More transparent than peers — deal-level data published, historical performance available. The underwriting shows in actual performance. Not a competitor; a reference architecture for what good private credit diligence looks like when you're not trying to maximize deal volume.</div>
     </div>
     <div class="platform-card">
-      <div class="platform-name">Honeycomb Credit</div>
-      <div class="platform-stat">$60M+ · community business loans</div>
-      <div class="platform-note">Reg CF debt-based. Local businesses borrow from their communities — restaurant raises $200K from regulars who become lenders. Non-accredited accessible. Genuinely differentiated model: investors have affinity with the borrower, which may improve repayment behavior. Small scale but the community-as-underwriter thesis has strategic resonance for BTHI.</div>
+      <div class="platform-card-top">
+        <span class="platform-name">Honeycomb Credit</span>
+        <span class="platform-access access-retail">Retail</span>
+      </div>
+      <div class="platform-stat">$60M+ · community business loans · Reg CF debt</div>
+      <div class="platform-take">Local businesses borrow from their communities. Non-accredited accessible. Community affinity with the borrower may genuinely improve repayment behavior — lenders who eat at the restaurant have different incentive alignment than anonymous capital markets. Small scale but the community-as-underwriter thesis resonates. Worth watching.</div>
       <span class="platform-flag flag-watch">Model Worth Studying</span>
     </div>
   </div>
+
+  {% include commentary.html
+    label="What this bucket teaches us"
+    text="Yieldstreet is what happens when a platform scales on fee volume rather than outcome quality. The collateral misrepresentation in the marine finance portfolio wasn't discovered by the platform — it was discovered when deals started failing. An investor who co-invests has an incentive to find problems before close. A fee collector does not." %}
 </div>
 
 <hr class="rule">
 
-<!-- BUCKET 04: PRE-IPO SECONDARIES -->
+<!-- BUCKET 04 -->
 <div class="bucket">
   <div class="bucket-header">
-    <span class="bucket-number">04 ————</span>
+    <span class="bucket-number">04</span>
     <span class="bucket-title">Pre-IPO Secondaries</span>
   </div>
-  <p>Access to late-stage private company equity — Stripe, SpaceX, Databricks — for retail investors. The liquidity mechanics are complex. Most of these platforms are accredited-only in practice, though some retail-facing marketing implies broader access.</p>
+  <p class="bucket-intro">Late-stage private company equity — Stripe, SpaceX, Databricks — for retail-adjacent investors. The liquidity mechanics are complex. Most are accredited-only in practice despite retail-adjacent marketing.</p>
 
   <div class="platform-grid">
     <div class="platform-card">
-      <div class="platform-name">Forge Global</div>
-      <div class="platform-stat">Schwab acquired · $660M valuation · 67% SPAC discount</div>
-      <div class="platform-note">The institutional pre-IPO secondary market leader. Charles Schwab acquired a controlling stake — legitimacy signal. Originally went public via SPAC at a valuation implying 67% dilution from peak; stock has not recovered. B2B focused (wealth managers, institutions), not retail-direct. The Schwab integration gives distribution but also reorients toward the wealth management channel.</div>
+      <div class="platform-card-top">
+        <span class="platform-name">Forge Global</span>
+        <span class="platform-access access-accredited">Accredited</span>
+      </div>
+      <div class="platform-stat">Schwab acquired · $660M SPAC val. · 67% below peak</div>
+      <div class="platform-take">Institutional pre-IPO secondary market leader. Schwab acquisition signals legitimacy. SPAC listing at peak produced a 67% discount to implied valuation — stock has not recovered. B2B focused (wealth managers, institutions). The Schwab integration reorients toward the wealth management channel. Not a retail platform; a reference for where the institutional secondary market is consolidating.</div>
     </div>
     <div class="platform-card">
-      <div class="platform-name">Hiive</div>
-      <div class="platform-stat">$650M private valuation · transparent order book</div>
-      <div class="platform-stat" style="color: var(--ink); opacity: 0.6;">Most recent growth-stage private</div>
-      <div class="platform-note">The most interesting player in this category. Publishes a transparent, real-time order book for pre-IPO shares — bid/ask visible to all participants. This is genuinely novel; competitors treat pricing as proprietary. Growing fast; now one of the most active marketplaces by transaction count. Accredited only but the transparency model is a reference architecture.</div>
+      <div class="platform-card-top">
+        <span class="platform-name">Hiive</span>
+        <span class="platform-access access-accredited">Accredited</span>
+      </div>
+      <div class="platform-stat">$650M private val. · transparent order book</div>
+      <div class="platform-take">The most interesting player in the category. Publishes a real-time order book for pre-IPO shares — bid/ask visible to all participants. Genuinely novel: competitors treat pricing as proprietary. Accredited only, but the transparency model is a direct reference for how markets become trustworthy. We're studying Hiive's order book design for our fee and terms disclosure framework.</div>
       <span class="platform-flag flag-watch">Transparency Reference</span>
     </div>
     <div class="platform-card">
-      <div class="platform-name">EquityZen</div>
-      <div class="platform-stat">$10K minimum · SPV structure · accredited</div>
-      <div class="platform-note">Pioneer of the pre-IPO secondary model for retail-adjacent investors. $10K minimum — the lowest in the category for institutional-quality deal flow. Uses SPV structure: you own a share in a special purpose vehicle that holds the underlying equity. No direct ownership, no rights transfer. The SPV fees are meaningful and reduce net returns.</div>
+      <div class="platform-card-top">
+        <span class="platform-name">EquityZen</span>
+        <span class="platform-access access-accredited">Accredited</span>
+      </div>
+      <div class="platform-stat">$10K minimum · SPV structure · pioneer</div>
+      <div class="platform-take">Pioneer of the pre-IPO secondary model for retail-adjacent investors. $10K minimum — lowest in the category for institutional-quality deal flow. SPV structure means no direct ownership and no rights transfer. SPV fees are meaningful and reduce net returns. The model works for its audience; the SPV opacity is the structural weakness.</div>
     </div>
     <div class="platform-card">
-      <div class="platform-name">Linqto</div>
-      <div class="platform-stat">$2.5K minimum · reseller model criticism</div>
-      <div class="platform-note">Targets the most retail-adjacent segment of pre-IPO. Low minimums ($2,500). Acquires shares from sellers, marks them up, resells to investors — a reseller model rather than a pure marketplace. The markup is opaque; critics note investors often pay meaningfully above fair market value. Regulatory scrutiny increasing on the model.</div>
-      <span class="platform-flag flag-warning">Opacity Concerns</span>
+      <div class="platform-card-top">
+        <span class="platform-name">Linqto</span>
+        <span class="platform-access access-retail">Retail</span>
+      </div>
+      <div class="platform-stat">$2.5K minimum · reseller model · opacity concerns</div>
+      <div class="platform-take">Acquires shares, marks them up, resells to investors. The markup is opaque — investors often pay meaningfully above fair market value with no visibility into the spread. Regulatory scrutiny increasing on this model. This is the "hidden spread" problem we commit to never doing in our principles.</div>
+      <span class="platform-flag flag-warning">Opacity / Hidden Spread</span>
     </div>
   </div>
+
+  {% include commentary.html
+    label="What this bucket teaches us"
+    text="Linqto is the direct example behind Principle 02. The reseller model — buy shares, mark up, sell to retail — is legal but structurally dishonest. When we publish every fee at the deal level, it's because we've seen what happens when fees aren't published: investors pay them without knowing." %}
 </div>
 
 <hr class="rule">
 
-<!-- BUCKET 05: SPECIALTY ASSETS -->
+<!-- BUCKET 05 -->
 <div class="bucket">
   <div class="bucket-header">
-    <span class="bucket-number">05 ————</span>
+    <span class="bucket-number">05</span>
     <span class="bucket-title">Specialty Assets</span>
   </div>
-  <p>Art, wine, sports cards, vintage cars, royalties. The "alternative alternatives." Most of these are Reg A+ structures allowing non-accredited participation. The investment thesis is diversification and passion; the reality is illiquidity with high platform fees and unpredictable exit timing.</p>
+  <p class="bucket-intro">Art, wine, sports cards, vintage cars. The alternative alternatives. Most use Reg A+ for non-accredited access. The investment thesis is diversification and passion; the reality is illiquidity with layered fees and uncertain exit timing.</p>
 
   <div class="platform-grid">
     <div class="platform-card">
-      <div class="platform-name">Masterworks</div>
+      <div class="platform-card-top">
+        <span class="platform-name">Masterworks</span>
+        <span class="platform-access access-retail">Retail</span>
+      </div>
       <div class="platform-stat">$800M+ · contemporary fine art · Reg A+</div>
-      <div class="platform-note">Fractional ownership of blue-chip contemporary art. Acquires works, securitizes them via Reg A+ offerings, sells to retail at $20 minimums. Exits when the work is sold at auction. Has achieved several notable sales at gains. Critics note selection bias in marketed returns and the primary market secondary (Masterworks Exchange) has thin volume. Platform fees are layered.</div>
+      <div class="platform-take">Fractional contemporary art. Acquires works, securitizes via Reg A+. Has achieved notable auction exits at gains. Critics note selection bias in marketed returns and thin volume on the Masterworks Exchange secondary. Platform fees are layered and non-trivial. The auction exit track record is real but the fee math reduces net returns materially.</div>
     </div>
     <div class="platform-card">
-      <div class="platform-name">Rally</div>
-      <div class="platform-stat">Sports memorabilia · vintage cars · Reg A+</div>
-      <div class="platform-note">Collectibles fractionalization. Cars, sports cards, comics, watches. Non-accredited accessible. The underlying asset selection is curated but the illiquidity is severe — secondary trading windows are infrequent, volume is thin, and exit timing is entirely platform-controlled. More similar to owning an undated bond than an equity stake.</div>
+      <div class="platform-card-top">
+        <span class="platform-name">Rally</span>
+        <span class="platform-access access-retail">Retail</span>
+      </div>
+      <div class="platform-stat">Sports cards · cars · comics · Reg A+</div>
+      <div class="platform-take">Collectibles fractionalization. Non-accredited accessible. Illiquidity is severe — secondary trading windows are infrequent, volume is thin, exit timing platform-controlled. More similar to owning an undated bond than an equity stake. The passion-asset thesis is real; the return thesis is harder to verify.</div>
     </div>
     <div class="platform-card">
-      <div class="platform-name">Vint</div>
+      <div class="platform-card-top">
+        <span class="platform-name">Vint</span>
+        <span class="platform-access access-retail">Retail</span>
+      </div>
       <div class="platform-stat">Fine wine · SEC-qualified Reg A+</div>
-      <div class="platform-note">Wine investment via fractional case ownership. Niche but legitimate — wine has a 30-year track record as an alternative asset class. Vint's sourcing and storage infrastructure is credible. The investor base is small; secondary market nearly nonexistent. Interesting as a proof of concept for non-financial alternative assets.</div>
+      <div class="platform-take">Wine investment via fractional case ownership. Wine has a 30-year track record as an alternative asset class. Vint's sourcing and storage infrastructure is credible. Secondary market nearly nonexistent. Interesting as a proof of concept for non-financial alternative assets but not a liquidity play.</div>
     </div>
     <div class="platform-card">
-      <div class="platform-name">Public.com</div>
-      <div class="platform-stat">Stocks + bonds + alts · retail-first</div>
-      <div class="platform-note">Primarily a brokerage, expanded into alternative assets. Offers treasury bills, corporate bonds, and some alternative products alongside equity. The alternatives offering is thin but the retail-first UX and distribution are strong. Important as a signal: mainstream brokerage is absorbing the "retail access to alts" positioning.</div>
+      <div class="platform-card-top">
+        <span class="platform-name">Public.com</span>
+        <span class="platform-access access-retail">Retail</span>
+      </div>
+      <div class="platform-stat">Stocks + bonds + alts · brokerage-first</div>
+      <div class="platform-take">Primarily a brokerage, expanding into alternative assets. Thin alternatives offering but strong retail-first UX and significant distribution. Important signal: mainstream brokerage is absorbing the "retail access to alts" positioning. If Public commits to the category seriously, distribution advantages become hard to compete with.</div>
     </div>
   </div>
 </div>
 
 <hr class="rule">
 
-<!-- BUCKET 06: SYNDICATES -->
+<!-- BUCKET 06 -->
 <div class="bucket">
   <div class="bucket-header">
-    <span class="bucket-number">06 ————</span>
-    <span class="bucket-title">Syndicates &amp; Lead Investor Models</span>
+    <span class="bucket-number">06</span>
+    <span class="bucket-title">Syndicates &amp; Lead-Investor Models</span>
   </div>
-  <p>The category most directly relevant to BTHI's thesis. These platforms operate community-led or lead-investor-guided co-investment. The accreditation and skin-in-the-game mechanics vary significantly.</p>
+  <p class="bucket-intro">The category most directly relevant to what we're building. Community-led or lead-investor-guided co-investment. The accreditation and skin-in-the-game mechanics vary significantly across platforms.</p>
 
   <div class="platform-grid">
     <div class="platform-card">
-      <div class="platform-name">AngelList</div>
+      <div class="platform-card-top">
+        <span class="platform-name">AngelList</span>
+        <span class="platform-access access-accredited">Accredited</span>
+      </div>
       <div class="platform-stat">$171B platform · $1.2B+ in syndicates</div>
-      <div class="platform-note">The reference architecture for everything in this category. Syndicates allow experienced operators to lead deals with carry; their followers co-invest pro rata. The lead has skin in the game (they invest first, take carry, bear reputational risk). AngelList Rolling Funds and Stack extend the model to recurring LP commitments. <strong>Accredited only</strong> — this is the key gap BTHI is trying to address for the non-accredited market.</div>
+      <div class="platform-take">The reference architecture. Syndicates allow experienced operators to lead deals with carry; followers co-invest pro-rata. The lead has skin in the game, reputational risk, and carry. AngelList Rolling Funds and Stack extend to recurring LP commitments. Accredited only — this is the structural gap we're addressing. Everything we're building starts from this model.</div>
       <span class="platform-flag flag-competitor">Reference Architecture</span>
     </div>
     <div class="platform-card">
-      <div class="platform-name">FundersClub</div>
-      <div class="platform-stat">Accredited only · curated deal flow</div>
-      <div class="platform-note">Selective admission, curated deal flow, accredited investors. The "quality over volume" approach to equity crowdfunding. Track record includes early Coinbase, Lyft, Twitch. Returns look good on a few marquee winners; base rate across portfolio is less clear. Has not scaled to AngelList's infrastructure position. Accredited only throughout.</div>
+      <div class="platform-card-top">
+        <span class="platform-name">FundersClub</span>
+        <span class="platform-access access-accredited">Accredited</span>
+      </div>
+      <div class="platform-stat">Selective · accredited · curated deal flow</div>
+      <div class="platform-take">Selective admission, curated deal flow, accredited investors. Early portfolio includes Coinbase, Lyft, Twitch. Quality-over-volume approach to equity crowdfunding. Has not scaled to AngelList's infrastructure position. Track record looks good on marquee winners; base rate across portfolio is less legible. Accredited only throughout.</div>
     </div>
     <div class="platform-card">
-      <div class="platform-name">OurCrowd</div>
-      <div class="platform-stat">$2.2B invested · skin-in-the-game model</div>
-      <div class="platform-note">Jerusalem-based, global investor base. <strong>OurCrowd co-invests in every deal</strong> — this is the defining structural differentiator. They're not a marketplace taking fees; they're a co-investor taking risk alongside LPs. Accredited only but the alignment model is exactly what BTHI is trying to replicate. The "experienced investor alongside retail" thesis, operationalized at scale.</div>
-      <span class="platform-flag flag-watch">Skin-in-Game Model</span>
+      <div class="platform-card-top">
+        <span class="platform-name">OurCrowd</span>
+        <span class="platform-access access-accredited">Accredited</span>
+      </div>
+      <div class="platform-stat">$2.2B invested · platform co-invests every deal</div>
+      <div class="platform-take"><strong>OurCrowd co-invests in every deal on its platform.</strong> This is the defining structural differentiator in the category. They are not a marketplace earning fees on deal volume. They are a co-investor taking risk alongside LPs. Accredited only — but the platform-co-investment model is exactly what we're trying to extend to non-accredited investors. If we have one structural ancestor, it's OurCrowd.</div>
+      <span class="platform-flag flag-watch">Our Direct Ancestor</span>
     </div>
   </div>
+
+  {% include commentary.html
+    label="What this bucket teaches us"
+    text="AngelList proves the lead-investor syndicate model works at scale. OurCrowd proves that platform co-investment builds trust and aligns incentives. Neither is accessible to non-accredited investors. That's the gap. The question is whether the regulatory architecture of Reg CF can support this model at sufficient scale to build a real business. We think it can." %}
 </div>
 
 <hr class="rule">
 
-<!-- CLOSING CALLOUT -->
-<div class="callout callout-red">
-  <div class="callout-label">Where the white space actually is</div>
-  <h3>What this map reveals BTHI can build that nobody else has</h3>
-  <p>After 36 platforms, one structural gap is consistent: nobody has built community-led co-investment for non-accredited investors alongside experienced investors on genuinely equivalent terms. The closest models — AngelList syndicates, OurCrowd's co-investment structure — are accredited-only by design. Wefunder's Investor Clubs gets the community mechanic right but applies it to unvetted Reg CF deals without experienced-investor guardrails.</p>
-  <p>The playbook that doesn't exist yet:</p>
-  <ul class="white-space-list">
-    <li>Community-led co-investment structure accessible to non-accredited investors via Reg CF or Reg A+ mechanics</li>
-    <li>Transparent economics — same share class, same price, disclosed carry if any, no hidden markups</li>
-    <li>Genuine diligence — experienced investor with skin in the game leading the round, not a platform taking listing fees</li>
-    <li>Education-as-funnel — Honeycomb proves community affinity drives conversion; CrowdfundingSucks.com is the content moat</li>
-    <li>Vertical depth over breadth — one sector with real deal flow is worth more than a 36-platform marketplace of mediocre deals</li>
-  </ul>
+<div class="deal-section" style="padding-top:0;">
+  <span class="deal-section-label">Synthesis</span>
+  <h2>Where the white space actually is</h2>
+  <p>After 36 platforms, one structural gap is consistent across all categories.</p>
+
+  <ol class="whitespace-list">
+    <li>Nobody has built community-led co-investment for non-accredited investors alongside an experienced lead investor on genuinely equivalent terms. AngelList and OurCrowd are accredited-only by design. Wefunder's Investor Clubs gets the community mechanic right but has no experienced-lead accountability and no platform co-investment.</li>
+    <li>The CrowdStreet and Yieldstreet failures share a common architecture: a marketplace that earns fees on deal volume has no structural incentive to turn down bad deals. The solution is co-investment, not better diligence checklists.</li>
+    <li>Transparent economics are nearly nonexistent in retail alternatives. Linqto's opaque markup, Masterworks' layered fees, SPV carry that isn't disclosed at the deal level — these are standard, not outliers. Publishing every fee on every deal at the deal level is genuinely differentiated.</li>
+    <li>The education-as-funnel model is underexplored. Honeycomb proves that community affinity drives conversion. CrowdfundingSucks.com is the content moat before the product exists. No major platform has treated education as the top-of-funnel.</li>
+    <li>Secondary liquidity is unsolved and probably unsolvable at the Reg CF scale. StartEngine Secondary has thin volume and wide spreads. The right response is honest disclosure about illiquidity, not a secondary market that implies liquidity that doesn't exist.</li>
+    <li>Vertical depth beats horizontal breadth. The platforms with the worst outcomes — CrowdStreet's undifferentiated real estate marketplace, Republic's dispersed pivots — spread too thin. One sector with real deal flow and genuine expertise is worth more than a 36-category marketplace.</li>
+  </ol>
 </div>
